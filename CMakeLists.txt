@@ -87,11 +87,7 @@ SET(CMAKE_REQUIRED_DEFINITIONS)
 SET(CMAKE_REQUIRED_INCLUDES)
 SET(CMAKE_REQUIRED_LIBRARIES)
 SET(CMAKE_REQUIRED_FLAGS)
-if (CMAKE_BUILD_TYPE STREQUAL "Debug")
-  OPTION(ENABLE_WERROR "Treat warnings as errors - default is ON for Debug, OFF otherwise." ON)
-else ()
-  OPTION(ENABLE_WERROR "Treat warnings as errors - default is ON for Debug, OFF otherwise." OFF)
-endif ()
+OPTION(ENABLE_WERROR "Treat warnings as errors - default is OFF." OFF)
 
 # Especially for early development, we want to be a little
 # aggressive about diagnosing build problems; this can get
