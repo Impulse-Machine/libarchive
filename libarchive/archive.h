@@ -96,11 +96,6 @@ typedef ssize_t la_ssize_t;
 # endif
 #endif
 
-/* Large file support for Android */
-#ifdef __ANDROID__
-#include "android_lf.h"
-#endif
-
 /*
  * On Windows, define LIBARCHIVE_STATIC if you're building or using a
  * .lib.  The default here assumes you're building a DLL.  Only
